@@ -1,0 +1,68 @@
+.service {
+  display: grid;
+  grid-gap: 80px;
+  padding: 64px 0;
+
+  .service__header {
+    display: grid;
+    grid-gap: 16px;
+    place-items: center;
+    color: #333333;
+
+    .header__cursive {
+      font-size: 24px;
+      font-weight: 400;
+      font-family: "Kaushan Script", cursive;
+    }
+
+    .header__bold {
+      font-size: 30px;
+      font-weight: 700;
+      font-family: "Montserrat", sans-serif;
+      text-transform: uppercase;
+    }
+
+    .header__border-bottom {
+      width: 60px;
+      height: 3px;
+      background-color: #f38181;
+    }
+  }
+
+  .service__content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px 48px;
+
+    .content__item {
+      display: grid;
+      grid-template-columns: 36px 1fr;
+      grid-gap: 16px;
+
+      &-icon {
+        width: 36px;
+      }
+
+      &-text {
+        display: grid;
+        grid-gap: 16px;
+
+        .item-text__name {
+          font-size: 14px;
+          color: #333333;
+          font-weight: 400;
+          font-family: "Montserrat", sans-serif;
+          text-transform: uppercase;
+        }
+
+        .item-text__description {
+          font-size: 15px;
+          line-height: 24px;
+          color: #999999;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

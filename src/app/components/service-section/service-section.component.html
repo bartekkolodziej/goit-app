@@ -1,0 +1,22 @@
+<section class="service">
+
+  <header class="service__header">
+    <h3 class="header__cursive">We work with</h3>
+    <h3 class="header__bold">amazing services</h3>
+    <div class="header__border-bottom"></div>
+  </header>
+
+
+  <ul class="service__content">
+    <li class="content__item" *ngFor="let item of serviceItems">
+      <img class="content__item-icon" [alt]="item.name" [src]="'../../../assets/icons/' + item.icon">
+      <div class="content__item-text">
+        <h5 class="item-text__name">{{item.name}}</h5>
+        <p class="item-text__description">{{item.description}}</p>
+      </div>
+    </li>
+  </ul>
+
+
+
+</section>

@@ -1,0 +1,27 @@
+<div class="banner">
+  <div class="banner__gradient"></div>
+  <div class="banner__bg"></div>
+
+  <div class="banner__content">
+    <div class="banner__top-bar">
+      <h3 class="banner__company-name">MoGo</h3>
+      <nav class="banner__nav">
+        <ul class="banner__nav-list">
+          <li *ngFor="let item of navItems"
+              class="banner__nav-list-item"
+              [class.banner__nav-list-item--active]="item === activeNavItem">
+            <a *ngIf="!item.icon; else iconNavItem" (click)="onNavItemClick(item)">{{item.name}}</a>
+            <ng-template #iconNavItem>
+              <img class="banner__nav-list-icon" [alt]="item.name" [src]="'../../../assets/icons/' + item.icon">
+            </ng-template>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <header class="banner__header">
+      <h2 class="header__cursive">Creative Template</h2>
+      <h1 class="header__bold">welcome<br> to mogo</h1>
+      <button class="header__learn-more-btn">learn more</button>
+    </header>
+  </div>
+</div>

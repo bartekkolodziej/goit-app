@@ -1,0 +1,42 @@
+<section class="team">
+
+  <header class="team__header">
+    <h3 class="header__cursive">Who we are</h3>
+    <h3 class="header__bold">meet our team</h3>
+    <div class="header__border-bottom"></div>
+  </header>
+
+  <p class="team__description">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ornare vestibulum ornare. Donec luctus cursus magna
+    mattis aliquam. Etiam porta, felis in porta ornare, tortor risus placerat ex, eget dictum ex mi ac ex. Quisque ut
+    nibh in odio tincidunt dignissim eu quis nisi. Donec euismod nibh ante, at euismod justo tempus non.
+  </p>
+
+
+  <ul class="team__people-list">
+    <li class="people-list__item" *ngFor="let item of teamItems">
+      <div class="people-list__item-img-container">
+        <img class="item-img-container__img" [alt]="item.name" [src]="'../../../assets/images/' + item.img">
+        <div class="item-img-container__gradient"></div>
+        <div class="item-img-container__socials">
+          <div class="socials__item">
+            <img class="socials__item-img" src="../../../assets/icons/facebook.svg" alt="facebook">
+          </div>
+          <div class="socials__item">
+            <img class="socials__item-img" src="../../../assets/icons/twitter.svg" alt="twitter">
+          </div>
+          <div class="socials__item">
+            <img class="socials__item-img" src="../../../assets/icons/pinterest.svg" alt="pinterest">
+          </div>
+          <div class="socials__item">
+            <img class="socials__item-img" src="../../../assets/icons/instagram.svg" alt="instagram">
+          </div>
+        </div>
+      </div>
+      <div class="people-list__item-text">
+        <p class="item-text__name">{{item.name}}</p>
+        <p class="item-text__role">{{item.role}}</p>
+      </div>
+    </li>
+  </ul>
+</section>

@@ -1,0 +1,128 @@
+.banner {
+  height: 1000px;
+  background-position: center;
+  color: white;
+
+  .banner__gradient {
+    position: absolute;
+    left: 0;
+    background: linear-gradient(0deg, #fbe389 0%, #f48b82 100%);
+    height: 1000px;
+    width: 100%;
+    opacity: 90%;
+    z-index: 1;
+  }
+
+  .banner__bg {
+    position: absolute;
+    left: 0;
+    background-image: url("../../../assets/images/banner-bg.png");
+    background-position: center;
+    height: 1000px;
+    width: 100%;
+  }
+
+  .banner__content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+
+    .banner__top-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 32px 0;
+      font-family: 'Montserrat', sans-serif;
+
+      .banner__company-name {
+        display: grid;
+        place-content: flex-start;
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      .banner__nav {
+        display: grid;
+
+        .banner__nav-list {
+          display: grid;
+          grid-auto-flow: column;
+          list-style: none;
+          place-items: center;
+          place-content: center;
+          grid-gap: 36px;
+
+          &-item {
+            height: 24px;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+
+            &--active {
+              color: #fce38a;
+              border-bottom: 3px solid #fce38a;
+            }
+
+            &:hover {
+              cursor: pointer;
+              color: #fce38a;
+            }
+          }
+
+          &-icon {
+            height: 18px;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+        }
+      }
+    }
+
+    .banner__header {
+      display: grid;
+      place-content: center;
+      place-items: center;
+      grid-gap: 50px;
+
+      .header__cursive {
+        font-size: 72px;
+        font-weight: 400;
+        font-family: 'Kaushan Script', cursive;
+      }
+
+      .header__bold {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 150px;
+        line-height: 140px;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+      }
+
+      .header__learn-more-btn {
+        width: 160px;
+        height: 40px;
+        margin-top: 32px;
+        border: 3px solid white;
+        background-color: rgba(0,0,0,0);
+        text-transform: uppercase;
+
+        font-size: 14px;
+        color: white;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+
+        &:hover {
+          cursor: pointer;
+          color: #f38181;
+          border-color: #f38181;
+        }
+      }
+    }
+  }
+}
