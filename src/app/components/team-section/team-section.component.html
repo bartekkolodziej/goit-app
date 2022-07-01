@@ -16,20 +16,20 @@
   <ul class="team__people-list">
     <li class="people-list__item" *ngFor="let item of teamItems">
       <div class="people-list__item-img-container">
-        <img class="item-img-container__img" [alt]="item.name" [src]="'../../../assets/images/' + item.img">
+        <img class="item-img-container__img" [alt]="item.name" [srcset]="item.srcset" [src]="item.src">
         <div class="item-img-container__gradient"></div>
         <div class="item-img-container__socials">
           <div class="socials__item">
-            <img class="socials__item-img" src="../../../assets/icons/facebook.svg" alt="facebook">
+            <img class="socials__item-img" src="assets/icons/facebook.svg" alt="facebook">
           </div>
           <div class="socials__item">
-            <img class="socials__item-img" src="../../../assets/icons/twitter.svg" alt="twitter">
+            <img class="socials__item-img" src="assets/icons/twitter.svg" alt="twitter">
           </div>
           <div class="socials__item">
-            <img class="socials__item-img" src="../../../assets/icons/pinterest.svg" alt="pinterest">
+            <img class="socials__item-img" src="assets/icons/pinterest.svg" alt="pinterest">
           </div>
           <div class="socials__item">
-            <img class="socials__item-img" src="../../../assets/icons/instagram.svg" alt="instagram">
+            <img class="socials__item-img" src="assets/icons/instagram.svg" alt="instagram">
           </div>
         </div>
       </div>

@@ -12,11 +12,12 @@
               [class.banner__nav-list-item--active]="item === activeNavItem">
             <a *ngIf="!item.icon; else iconNavItem" (click)="onNavItemClick(item)">{{item.name}}</a>
             <ng-template #iconNavItem>
-              <img class="banner__nav-list-icon" [alt]="item.name" [src]="'../../../assets/icons/' + item.icon">
+              <img class="banner__nav-list-icon" [alt]="item.name" [src]="'assets/icons/' + item.icon">
             </ng-template>
           </li>
         </ul>
       </nav>
+<!--      <div class="banner__nav-trigger">&#9776;</div>-->
     </div>
     <header class="banner__header">
       <h2 class="header__cursive">Creative Template</h2>
@@ -24,4 +25,17 @@
       <button class="header__learn-more-btn">learn more</button>
     </header>
   </div>
+
+<!--  <nav class="banner__nav-mobile" #navMobile>-->
+<!--    <ul class="banner__nav-list">-->
+<!--      <li *ngFor="let item of navItems"-->
+<!--          class="banner__nav-list-item"-->
+<!--          [class.banner__nav-list-item&#45;&#45;active]="item === activeNavItem">-->
+<!--        <a *ngIf="!item.icon; else iconNavItem" (click)="onNavItemClick(item)">{{item.name}}</a>-->
+<!--        <ng-template #iconNavItem>-->
+<!--          <img class="banner__nav-list-icon" [alt]="item.name" [src]="'assets/icons/' + item.icon">-->
+<!--        </ng-template>-->
+<!--      </li>-->
+<!--    </ul>-->
+<!--  </nav>-->
 </div>

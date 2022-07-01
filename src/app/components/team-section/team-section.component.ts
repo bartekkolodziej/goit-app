@@ -3,7 +3,8 @@ import { Component, OnInit } from '@angular/core';
 export interface TeamItem {
   name: string;
   role: string;
-  img: string;
+  src: string;
+  srcset: string;
 }
 
 @Component({
@@ -17,17 +18,20 @@ export class TeamSectionComponent implements OnInit {
     {
       name: 'matthew dix',
       role: 'graphic design',
-      img: 'matthew_dix.png'
+      src: 'assets/images/matthew_dix.png',
+      srcset: 'assets/images/matthew_dix-mobile.png 2x, assets/images/matthew_dix.png,'
     },
     {
       name: 'christopher campbell',
       role: 'branding/UX design',
-      img: 'christopher_campbell.png'
+      src: 'assets/images/christopher_campbell.png',
+      srcset: 'assets/images/christopher_campbell-mobile.png 2x, assets/images/christopher_campbell.png'
     },
     {
       name: 'michael fertig',
       role: 'developer',
-      img: 'michael_fertig.png'
+      src: 'assets/images/michael_fertig.png',
+      srcset: 'assets/images/michael_fertig-mobile.png 2x, assets/images/michael_fertig.png 2x'
     },
   ];
 

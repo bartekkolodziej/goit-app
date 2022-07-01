@@ -8,6 +8,7 @@
     grid-gap: 16px;
     place-items: center;
     color: #333333;
+    text-align: center;
 
     .header__cursive {
       font-size: 24px;
@@ -53,10 +54,10 @@
         background-color: #95e1d3;
         display: inline-grid;
         position: relative;
+        width: 100%;
 
         .item-img-container__img {
           position: relative;
-          max-width: 380px;
           width: 100%;
           transition-duration: 0.25s;
           top: 0;
@@ -144,6 +145,12 @@
           text-transform: capitalize;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .team__people-list {
+      grid-template-columns: 1fr;
     }
   }
 }

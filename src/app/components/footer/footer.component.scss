@@ -48,4 +48,17 @@
       }
     }
   }
+
+  @media screen and (max-width: 576px) {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+
+    .footer__form {
+      justify-content: start;
+
+      .form__input {
+        width: 100%;
+      }
+    }
+  }
 }

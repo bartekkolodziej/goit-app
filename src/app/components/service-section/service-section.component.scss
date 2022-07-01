@@ -8,6 +8,7 @@
     grid-gap: 16px;
     place-items: center;
     color: #333333;
+    text-align: center;
 
     .header__cursive {
       font-size: 24px;
@@ -31,7 +32,6 @@
 
   .service__content {
     display: grid;
-    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 80px 48px;
 
@@ -63,6 +63,18 @@
           font-weight: 400;
         }
       }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .service__content {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .service__content {
+      grid-template-columns: 1fr;
     }
   }
 }
